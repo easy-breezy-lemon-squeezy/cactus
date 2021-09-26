@@ -1,0 +1,36 @@
+
+.nav{
+    grid-area:app-nav;
+    background-color: #e7e8ec;
+    margin-left:190px;
+}
+nav li{
+    list-style-type:none;
+}
+.nav a{
+    list-style-type:none;
+    display: flex;
+    margin:10px 10px;
+    width:200px;
+    text-decoration: none;
+    color:black;
+}
+.nav a.active{
+    color:#4CAF50;
+}
+.nav a.active svg{
+    color:#4CAF50;
+}
+.nav svg{
+    display: inline-flex;
+    font-size:20px;
+    color: black;
+}
+.nav span{
+    display: inline-flex;
+    margin-top:5px;
+    margin-left:10px;
+}
+.icon{
+    width:30px;
+}

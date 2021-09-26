@@ -1,0 +1,29 @@
+
+.profileInfo{
+    background-color: #e7e8ec;
+    width:900px;
+}
+.header img{
+    width:900px;
+    max-height: 200px;
+}
+.photo{
+    max-width:200px;
+    max-height: 200px;
+    overflow: hidden;
+}
+.photo img{
+    max-width:200px;
+}
+
+.page_info{
+    display: flex;
+    margin-top:20px;
+}
+.row_info{
+    display: flex;
+    max-width:700px;
+}
+.info{
+    margin-left:20px;
+}

@@ -1,0 +1,11 @@
+.avatar{
+    width:80px;
+    border-radius: 50px;
+}
+.selectedPage{
+    font-weight: bold;
+}
+span{
+    margin-left:10px;
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+
+.header {
+    grid-area:app-header;
+    background-color: #ffffff;
+
+}
+.logo {
+    height: 40px;
+    pointer-events: none;
+    margin:10px 190px;
+}
+.loginBlock{
+    float:right;
+}

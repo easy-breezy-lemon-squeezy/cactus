@@ -1,0 +1,13 @@
+.like{
+    display:flex;
+    width:100px;
+    height:30px;
+}
+.like svg {
+    color: #4CAF50;
+    font-size:20px;
+}
+.like span{
+    margin-left:10px;
+    font-size:20px;
+}

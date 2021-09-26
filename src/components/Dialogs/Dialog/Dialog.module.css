@@ -1,0 +1,9 @@
+.dialog{
+    margin:10px;
+}
+
+.dialogs .active{
+    text-decoration-line: underline;
+    color:#4CAF50;
+    font-weight: bold;
+}

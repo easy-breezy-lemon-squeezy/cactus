@@ -1,0 +1,17 @@
+import post from "./MyPosts.module.css";
+import Post from "./Post/Post";
+import NewPost from "./NewPost/NewPost";
+
+function MyPosts(props) {
+    let postsComponents = props.posts.map( p => <Post likesCount={p.likesCount}  message={p.message} key={p.id}/>);
+
+    return (
+        <div className={post.posts}>
+            <h3>Мои посты</h3>
+            <NewPost onAddPost={props.addPost} updateNewPostText={props.postChange} newPostText={props.newPostText}/>
+            {postsComponents}
+        </div>
+    );
+}
+
+export default MyPosts;

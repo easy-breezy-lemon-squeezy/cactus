@@ -1,0 +1,24 @@
+
+.photo{
+    max-width:800px;
+}
+
+.author{
+    max-width:70px;
+    max-height: 70px;
+    border-radius:50px;
+    overflow: hidden;
+    margin:10px 10px 0px 0px;
+}
+.author img{
+    max-width:70px;
+}
+.content{
+}
+.wrap{
+    display:flex;
+    margin-top:20px;
+}
+.like{
+    margin:0px 50px 0px 850px;
+}
