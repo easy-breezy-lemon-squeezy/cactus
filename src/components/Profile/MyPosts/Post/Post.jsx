@@ -1,7 +1,7 @@
 import new_post from "../../../../new.jpg";
 import post from "./Post.module.css";
 import avatar_photo from "../../../../avatar.jpg";
-import Like from "../../../Buttons/Like/Like";
+import Like from "../../../common/buttons/Like/Like";
 
 function Post(props) {
     return (

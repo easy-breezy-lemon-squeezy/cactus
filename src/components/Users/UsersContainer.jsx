@@ -8,11 +8,13 @@ import {
 } from "../../redux/users-reducer";
 import Users from "./Users";
 import Preloader from "../common/Preloader/Preloader";
-import {withAuthRedirect} from "../hoc/withAuthRedirect";
-import Dialogs from "../Dialogs/Dialogs";
 import {compose} from "redux";
-import {getProfile, setUserProfile} from "../../redux/profile-reducer";
-import {withRouter} from "react-router-dom";
+import {
+    getCurrentPageState, getIsFetchingState,
+    getPageSizeState, getTotalUserCountState, getUsersState, getUsersSelector
+} from "../../redux/users-selectors";
+
+
 
 
 class UsersContainer extends React.Component{
@@ -39,7 +41,7 @@ class UsersContainer extends React.Component{
     }
 }
 
-let mapStateToProps = (state) =>{
+/*let mapStateToProps = (state) =>{
     return {
         users: state.usersPage.users,
         pageSize: state.usersPage.pageSize,
@@ -47,10 +49,19 @@ let mapStateToProps = (state) =>{
         currentPage: state.usersPage.currentPage,
         isFetching: state.usersPage.isFetching
     }
+}*/
+
+let mapStateToProps = (state) => {
+    return {
+        users: getUsersSelector(state),
+        pageSize: getPageSizeState(state),
+        totalUserCount: getTotalUserCountState(state),
+        currentPage: getCurrentPageState(state),
+        isFetching: getIsFetchingState(state)
+    }
 }
 
 export default compose(
     connect(mapStateToProps, {followSuccess, unfollowSuccess, setCurrentPage,
-        getUsers, getCurrentPage, follow, unfollow}),
-    withAuthRedirect
+        getUsers, getCurrentPage, follow, unfollow})
 )(UsersContainer);

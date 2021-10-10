@@ -36,7 +36,6 @@ function Users(props) {
                     </div>
                     <div className={styles.row}>
                     <span>
-                        {console.log(u)}
                         <div>{u.name}</div>
                         <div>{u.status}</div>
                     </span>
