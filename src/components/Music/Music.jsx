@@ -4,7 +4,7 @@ import music from "./Music.module.css";
 function Music() {
     return (
         <div className={music.page}>
-            Музыка
+            <h3>Музыка</h3>
         </div>
     );
 }

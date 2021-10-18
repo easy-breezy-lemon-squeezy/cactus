@@ -1,7 +1,7 @@
 
 .profileInfo{
     background-color: #e7e8ec;
-    width:900px;
+    width:740px;
 }
 .header img{
     width:900px;
@@ -25,5 +25,20 @@
     max-width:700px;
 }
 .info{
-    margin-left:20px;
+    margin-left:0px;
+}
+.contact {
+    padding-left: 10px;
+}
+.profileInfo h3{
+    margin:0px;
+}
+.page_info input{
+    margin:10px 0px;
+}
+.page_info button{
+    margin:10px 0px;
+}
+.page_info b, h4{
+    line-height:1.5;
 }

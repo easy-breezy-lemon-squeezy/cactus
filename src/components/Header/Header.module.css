@@ -7,8 +7,33 @@
 .logo {
     height: 40px;
     pointer-events: none;
-    margin:10px 190px;
+    margin:10px 0px;
 }
 .loginBlock{
     float:right;
+}
+.headerWrapper{
+    margin:0px auto;
+    width:960px;
+}
+.loginName{
+    font-weight: bold;
+    font-size: 20px;
+}
+.loginBlock button{
+    float:right;
+    cursor: pointer;
+    border:none;
+    background-color: rgba(0,0,0,0);
+}
+
+.loginBlock{
+    margin:10px 0px;
+}
+.signIn{
+    margin:10px 0px;
+}
+.signIn a{
+    text-decoration: none;
+    color:black;
 }

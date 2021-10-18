@@ -1,0 +1,25 @@
+.avatar{
+    width:80px;
+    height:80px;
+    border-radius: 50px;
+}
+.col2 button{
+    margin:10px 0px;
+}
+.col1{
+    display:inline-block;
+}
+.col2{
+    display:inline-block;
+}
+.row{
+    display:flex;
+    margin:20px 10px;
+}
+
+.folInfo {
+    margin:0px 30px;
+}
+.folInfo p{
+    line-height: 0.5;
+}

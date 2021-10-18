@@ -4,7 +4,7 @@ import news from "./Settings.module.css";
 function Settings() {
     return (
         <div className={news.page}>
-            Настройки
+            <h3>Настройки</h3>
         </div>
     );
 }

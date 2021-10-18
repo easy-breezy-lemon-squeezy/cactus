@@ -14,12 +14,12 @@ body {
   color: black;
   display:grid;
   grid-template-areas:
-  "app-header app-header"
   "app-nav app-content";
-  grid-template-rows: 70px 21fr;
   grid-template-columns: 4fr 10fr;
-
+  margin:0px auto;
+  width:960px;
 }
 .app-wrapper-content{
   grid-area:app-content;
+  width:740px;
 }

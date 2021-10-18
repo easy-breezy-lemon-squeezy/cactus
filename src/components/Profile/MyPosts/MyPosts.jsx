@@ -3,7 +3,7 @@ import Post from "./Post/Post";
 import NewPost from "./NewPost/NewPost";
 
 function MyPosts(props) {
-    let postsComponents = props.posts.map( p => <Post likesCount={p.likesCount}  message={p.message} key={p.id}/>);
+    let postsComponents = props.posts.map( p => <Post key={p.id} likesCount={p.likesCount}  message={p.message} key={p.id}/>);
 
     return (
         <div className={post.posts}>

@@ -5,10 +5,14 @@ import {NavLink} from "react-router-dom";
 function Header(props) {
     return (
         <header className={head.header}>
-            <img src={logo} className={head.logo} alt="logo" />
-            <div className={head.loginBlock}>
-                {props.isAuth ? <div>{props.login} - <button onClick={props.logout}>Выйти</button></div> :
-                <NavLink to={'/login'}>Вход</NavLink>}
+            <div className={head.headerWrapper}>
+                <img src={logo} className={head.logo} alt="logo" />
+                <div className={head.loginBlock}>
+                    {props.isAuth ? <div>
+                            <div className={head.loginName}>{props.login} </div>
+                            <button onClick={props.logout}>Выйти</button></div> :
+                        <div className={head.signIn}><NavLink to={'/login'}>Вход</NavLink></div>}
+                </div>
             </div>
         </header>
     );

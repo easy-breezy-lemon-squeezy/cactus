@@ -2,7 +2,6 @@
 .nav{
     grid-area:app-nav;
     background-color: #e7e8ec;
-    margin-left:190px;
 }
 nav li{
     list-style-type:none;

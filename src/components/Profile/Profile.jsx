@@ -5,7 +5,8 @@ import MyPostsContainer from "./MyPosts/MyPostsContainer";
 function Profile(props) {
     return (
         <div className={profile.page}>
-           <ProfileInfo profile={props.profile} status={props.status} updateStatus={props.updateStatus}/>
+           <ProfileInfo profile={props.profile} status={props.status} updateStatus={props.updateStatus}
+                        savePhoto={props.savePhoto} isOwner={props.isOwner} saveProfile={props.saveProfile}/>
            <MyPostsContainer/>
         </div>
     );
