@@ -8,7 +8,9 @@ import {compose} from "redux";
 
 
 class ProfileContainer extends React.Component{
+
     refreshProfile() {
+
         let userId = this.props.match.params.iserId;
 
         if(!userId){
@@ -32,10 +34,11 @@ class ProfileContainer extends React.Component{
     }
 
     render(){
+
         return (
             <Profile {...this.props} profile={this.props.profile} status={this.props.status}
                      updateStatus={this.props.updateStatus} savePhoto={this.props.savePhoto}
-                     isOwner={!this.props.match.params.userId}/>
+                     isOwner={!this.props.match.params.iserId}/>
         );
 
     }

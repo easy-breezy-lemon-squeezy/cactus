@@ -8,7 +8,7 @@ import s from "./ProfileInfo.module.css"
 import ProfileInfoDataForm from "./ProfileInfoDataForm";
 import {useState} from "react";
 
-function ProfileInfo({profile, status, updateStatus, isOwner, savePhoto, saveProfile }) {
+function ProfileInfo({profile, status, updateStatus, isOwner, savePhoto, saveProfile, userId }) {
     let [editMode, setEditMode] = useState(false);
 
     if (!profile){
@@ -76,7 +76,8 @@ const ProfileData = ({profile, isOwner, goToEditMode}) => {
             return <Contact key={key} contactTitle={key} contactValue={profile.contacts[key]}/>
         })}
         </div>
-        {isOwner && <div><button onClick={goToEditMode}>Редактировать</button></div>}
+        {console.log(isOwner)}
+        {isOwner ? <div><button onClick={goToEditMode}>Редактировать</button></div> : <div></div>}
     </div>
 }
 
