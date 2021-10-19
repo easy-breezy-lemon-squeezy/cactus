@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import Navbar from "./components/Navbar/Navbar";
-import {BrowserRouter, Route, withRouter, Redirect, HashRouter} from "react-router-dom";
+import {Route, Redirect, HashRouter} from "react-router-dom";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
@@ -21,7 +21,6 @@ class App extends Component {
 
     componentDidMount() {
         this.props.initializeApp();
-
     }
 
     render() {
