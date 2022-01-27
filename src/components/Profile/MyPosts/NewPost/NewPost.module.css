@@ -1,8 +1,9 @@
 .post{
-    width:740px;
+    max-width:740px;
+    margin-bottom: 50px;
 }
 .textarea{
     height:100px;
-    width:735px;
+    width: 100%;
     resize:vertical;
 }

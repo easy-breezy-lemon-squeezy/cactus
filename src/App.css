@@ -17,9 +17,15 @@ body {
   "app-nav app-content";
   grid-template-columns: 4fr 10fr;
   margin:0px auto;
-  width:960px;
+  max-width:960px;
 }
 .app-wrapper-content{
   grid-area:app-content;
-  width:740px;
+  max-width:740px;
+}
+@media (max-width:1000px){
+  .app-wrapper{
+    padding:0 10px;
+    grid-template-columns: 1fr 3fr;
+  }
 }

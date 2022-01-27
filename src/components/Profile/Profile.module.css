@@ -1,10 +1,10 @@
 
 .page{
     background-color: #e7e8ec;
-    width:740px;
+    max-width:740px;
 }
 .header img{
-    width:900px;
+    max-width:900px;
     max-height: 200px;
 }
 .photo{
@@ -25,4 +25,9 @@
 }
 .info{
     margin-left:20px;
+}
+@media (max-width:1000px){
+    .page{
+       padding-right:30px;
+    }
 }

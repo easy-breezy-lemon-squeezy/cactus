@@ -2,7 +2,6 @@
 .header {
     grid-area:app-header;
     background-color: #ffffff;
-
 }
 .logo {
     height: 40px;
@@ -14,7 +13,7 @@
 }
 .headerWrapper{
     margin:0px auto;
-    width:960px;
+    max-width:960px;
 }
 .loginName{
     font-weight: bold;
@@ -36,4 +35,9 @@
 .signIn a{
     text-decoration: none;
     color:black;
+}
+@media (max-width:1000px){
+    .header{
+        padding:0 20px;
+    }
 }

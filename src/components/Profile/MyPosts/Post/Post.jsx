@@ -13,11 +13,11 @@ function Post(props) {
                         <p>{props.message}</p>
                         {/*<img className={post.photo} src={new_post} alt="logo" />*/}
                     </div>
+                    <div className={post.like} >
+                        <Like count={props.likesCount}/>
+                    </div>
+                </div>
 
-                </div>
-                <div className={post.like} >
-                    <Like count={props.likesCount}/>
-                </div>
             </div>
 
     );

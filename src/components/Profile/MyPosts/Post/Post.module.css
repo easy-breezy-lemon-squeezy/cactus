@@ -18,7 +18,8 @@
 .wrap{
     display:flex;
     margin-top:20px;
+    margin-bottom:30px;
 }
 .like{
-    margin:0px 50px 0px 690px;
+    margin:45px 10px 0px auto;
 }

@@ -1,10 +1,10 @@
 
 .profileInfo{
     background-color: #e7e8ec;
-    width:740px;
+    max-width:740px;
 }
 .header img{
-    width:900px;
+    max-width:900px;
     max-height: 200px;
 }
 .photo{
@@ -13,7 +13,7 @@
     overflow: hidden;
 }
 .photo img{
-    max-width:250px;
+    max-width:100%;
 }
 
 .page_info{
