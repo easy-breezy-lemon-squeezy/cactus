@@ -39,3 +39,28 @@ nav li{
         padding-left:10px;
     }
 }
+@media (max-width:780px){
+    .nav{
+        padding-top:10px;
+    }
+    .nav span {
+        display: none;
+    }
+    .nav a{
+        min-width:25px;
+    }
+    .nav svg{
+        font-size:25px;
+    }
+    nav li{
+        padding:5px 0;
+    }
+}
+@media (max-width:575px) {
+    .nav svg{
+        font-size:20px;
+    }
+    nav li{
+        padding:2px 0;
+    }
+}

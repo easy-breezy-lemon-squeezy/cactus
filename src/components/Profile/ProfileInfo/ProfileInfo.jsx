@@ -1,5 +1,4 @@
-import header_photo from "../../../header-photo.jpg";
-import avatar_photo from "../../../avatar.jpg";
+
 import profileInfo from "./ProfileInfo.module.css";
 import Preloader from "../../common/Preloader/Preloader";
 import userPhoto from "../../../assets/images/user.jpg";
@@ -36,9 +35,9 @@ function ProfileInfo({profile, status, updateStatus, isOwner, savePhoto, savePro
         <div className={profileInfo.profileInfo}>
             {/*<div className={profileInfo.header}> <img src={header_photo} alt="photo" /></div>*/}
             <div className={profileInfo.page_info}>
-                <div>
-                    <div className={profileInfo.photo}><img src={photoLarge} alt="photo" /></div>
-                    {isOwner && <input placeholder={"Редактировать фото"} type={"file"} onChange={onMainPhotoSelected}/>}
+                <div className={profileInfo.page_infoPhoto}>
+                    <div className={profileInfo.photo}><img src={photoLarge} alt={"Аватар"} /></div>
+                    {isOwner && <div className={profileInfo.inputWrapper}><input placeholder={"Редактировать фото"} type={"file"} onChange={onMainPhotoSelected}/></div>}
                 </div>
 
                 <div className={profileInfo.info}>

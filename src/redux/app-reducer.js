@@ -1,4 +1,3 @@
-import {authAPI} from "../api/api";
 import {getAuth} from "./auth-reducer";
 
 const INITIALIZED_SUCCESS = 'INITIALIZED_SUCCESS';

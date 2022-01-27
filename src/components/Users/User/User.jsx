@@ -10,7 +10,7 @@ function Users({user,followingInProgress, follow, unfollow}) {
             <div className={styles.row}>
                 <div className={styles.col1}>
                     <NavLink to={'/profile/' + user.id}>
-                        <img className={styles.avatar} src={user.photos.small != null ? user.photos.small : userPhoto}/>
+                        <img className={styles.avatar} alt={"Аватар"} src={user.photos.small != null ? user.photos.small : userPhoto}/>
                     </NavLink>
                 </div>
                 <div className={styles.col2}>
